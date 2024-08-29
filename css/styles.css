@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #D4EFD0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px; /* Agrega algo de padding para que no se pegue a los bordes en dispositivos pequeños */
+}
+
+header img,
+footer img {
+    width: 100vw;
+    max-width: 450px;
+}
+
+section h2 {
+    width: 100%;
+    font-weight: bold;
+}
+
+.lacirilalogo {
+    padding-left: 0; /* Ajusta el padding para centrar el logo */
+}
+
+.lacirilalogo img {
+    width: 250px;
+    max-width: 250px;
+}
+
+.botonAgendame {
+    margin: 20px auto;
+    width: 300px;
+    height: 60px;
+    color: #407440;
+    padding: 5px 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 60px;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    background: #FCF6DB;
+    z-index: 1;
+}
+
+.botonAgendame:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.botonAgendame:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+    background-color: #ffe566;
+    right: 0;
+}
+
+.botonAgendame:active {
+    top: 2px;
+}
+
+.contador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#resultado {
+    margin-top: 25px;
+    font-size: 1.5em;
+    color: #30B4B0;
+    font-weight: bold;
+}
+
+#minuto {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #30B4B0;
+    font-weight: bold;
+}
+
+.mapa {
+    border: 1px solid #000; /* Borde negro fino */
+    border-radius: 5px;
+}
+
+.direccion {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    font-size: 1.1em;
+}
+
+.direccion h2 {
+    margin: 0;
+}
+
+.botonConfirmar {
+    font-size: 1.5rem;
+}
+
+.dinoRoar {
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
+    padding: 0;
+}
+.enSalon{
+    font-weight: bold;
+}
+
