@@ -10,8 +10,8 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
   <script src="https://kit.fontawesome.com/4635025c29.js" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/jpg" href="img/vistaprevia.jpg"/>
-  <title>TOTO CUMPLE 1 AÑO</title>
+  <link rel="icon" type="image/jpg" href="/img/vistaprevia.jpg"/>
+  <title>Felicidades</title>
   <!-- FACEBOOK Open Graph === -->
   <meta property="og:type" content="website" />
   <!-- <meta property="og:type" content="article" />  PARA ARTÍCULOS  -->
@@ -31,56 +31,8 @@
     <h2 class="enSalon">En Salon</h2>
     <img src="img/lacirila-logo.png" alt="Foto la Cirila">
   </div>
-  <section>
-    <h2>El dia <br> Domingo 21 de Julio de 2024 <br>de 13 a 18hs.</h2>
-    <a href="https://calendar.google.com/calendar/r/day/2024/07/21">
-      <button class="botonAgendame"> <i class="fa-solid fa-calendar-days"></i> Agendalo</button>
-    </a>
-  </section>
-  <div id="resultado"></div>
-  <div id="minuto"></div>
-  <section>
-    <a href="https://maps.app.goo.gl/Kgv1fYfgvtdCCzSVA" class="direccion">
-      <h2 class="direccion">Cno. Gral. Belgrano 6731 <br> Hudson </h2>
-    </a>
-    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13101.721380577177!2d-58.192857999999994!3d-34.820271!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32874e94f4587%3A0x2dff6270b9022a4a!2sLa%20Cirila%20Eventos!5e0!3m2!1ses-419!2sar!4v1719511515747!5m2!1ses-419!2sar" width="300" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
-  <section>
-    <article>
-      <a href="https://api.whatsapp.com/send?phone=5491159904862&text=Confirmo%C2%A0mi%C2%A0presencia">
-        <button class="botonConfirmar botonAgendame"><i class="fa-solid fa-square-check"></i> Confirmar Presencia</button>
-      </a>
-    </article>
-  </section>
   <footer>
     <img src="img/dinoroar.svg" alt="Dino Roar" class="footer-img">
   </footer>
-  <script type="text/javascript">
-    var final = moment("2024-07-21T13:00:00");
-    setInterval(function() {
-      var inicio = moment();
-      var duracion = final.diff(inicio);
-      var intervalo = moment.duration(duracion);
-      var dias = Math.floor(intervalo.asDays());
-      var horas = intervalo.hours();
-      var minutos = intervalo.minutes();
-      var segundos = intervalo.seconds();
-      $("#resultado").html("Faltan " + dias + " Días");
-      $("#minuto").html(horas + ":" + minutos + ":" + segundos );
-    }, 1000);
-
-    // Función para desmutear y reproducir el audio al hacer clic en cualquier parte del body
-    document.addEventListener('DOMContentLoaded', function() {
-      var audio = document.getElementById('background-audio');
-      audio.play().catch(function(error) {
-        console.log('Autoplay was prevented:', error);
-      });
-
-      document.body.addEventListener('click', function() {
-        audio.muted = false;
-        audio.play();
-      }, { once: true });
-    });
-  </script>
 </body>
 </html>

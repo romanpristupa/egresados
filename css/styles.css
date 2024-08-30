@@ -13,7 +13,7 @@ body {
     max-width: 450px;
     width: 100%;
     min-height: 100vh;
-    background-color: #D4EFD0;
+    background-image: url("/img/bariloche.jpeg");
     margin: 0 auto;
     text-align: center;
     padding: 20px; /* Agrega algo de padding para que no se pegue a los bordes en dispositivos pequeños */
