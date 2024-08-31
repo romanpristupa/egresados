@@ -16,7 +16,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     text-align: center;
-    background-color: #c9dcf2; /* Color de fondo para las áreas fuera de la imagen */
+    background-image: url("../img/Fondos-para-paginas-web-08.jpg"); /* Color de fondo para las áreas fuera de la imagen */
     
 }
 
@@ -25,19 +25,19 @@ header {
     
 }
 
-header img {
+header h1{
     width: 100%;
-    max-width: 450px;
-    height: 250px;
-    margin-top: 0px; /* Elimina cualquier espacio superior */
-    padding: auto;
-    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+    padding: 60px 0 ;   
+    
+
 }
 
 .lacirilalogo h2,
 footer h2 {
     width: 100%;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
     padding-top: 50px;
 }
