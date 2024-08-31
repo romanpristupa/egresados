@@ -45,4 +45,6 @@ footer h2 {
 body footer img{
     width: 320px;
     height: 320px;
+    border: 12px solid #ffffff;
+    
 }
