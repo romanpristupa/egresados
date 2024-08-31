@@ -3,9 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style:normal;
 
 }
 
@@ -19,33 +19,19 @@ body {
     text-align: center;
     background-color: #fff; /* Color de fondo para las áreas fuera de la imagen */
     overflow: hidden;
-}
-
-.container {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    pointer-events: none;
-}
-
-/* Añadimos un contenedor específico para la imagen de fondo */
-.background-image-container {
-    width: 450px;
-    height: 100%;
-    background-image: url("/img/bariloche.jpeg");
+    background-image: url('/img/bariloche.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    margin: 0 auto;
+    padding: 0;
 }
 
-/* Aseguramos que la imagen principal se adapte a 450px de ancho */
+
 header img {
     width: 100%;
     max-width: 450px;
+    height: 250px;
+    padding: 0;
 }
 
 .lacirilalogo h2,
