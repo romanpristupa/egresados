@@ -7,14 +7,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-  
-  <link rel="icon" type="image/jpg" href="/img/vistaprevia.jpg"/>
+  <link rel="icon" type="image/jpg" href="./img/vistaprevia.jpg"/>
   <title>Felicidades</title>
   <!-- FACEBOOK Open Graph === -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Regalo de Papa" />
   <meta property="og:description" content="Hija te envio este presente te Amo!!!" />
-  <meta property="og:image" content="img/vistaprevia.jpg"/>
+  <meta property="og:image" content="./img/vistaprevia.jpg"/>
   <meta property="og:image:width" content="800" />
   <meta property="og:image:height" content="418" />
   <meta property="og:site_name" content="Feliz Egreso" /> 
@@ -26,7 +25,7 @@
     <div class="lacirilalogo">
       <!-- Contenedor del video -->
       <div class="video-container">
-        <video id="video" src="./img/Juan Mejuto- egresados.mp4" controls autoplay="autoplay"></video>
+        <video id="video" src="./img/Juan Mejuto- egresados.mp4" controls ></video>
       </div>
     </div>
   </header>
@@ -35,17 +34,5 @@
     <h2>Te Amamos</h2>
     <h2>Papa Y Nina</h2>
   </footer>
-
-  <script>
-    // Esperar a que el video esté completamente cargado antes de reproducirlo
-    document.addEventListener('DOMContentLoaded', function () {
-      const video = document.getElementById('video');
-
-      video.addEventListener('canplaythrough', function () {
-        video.play();
-      });
-    });
-  </script>
-
 </body>
 </html>
