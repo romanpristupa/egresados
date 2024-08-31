@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
   
-  <link rel="icon" type="image/jpg" href="/img/vistaprevia.jpg"/>
+  <link rel="icon" type="image/jpg" href="./img/vistaprevia.jpg"/>
   <title>Felicidades</title>
   <!-- FACEBOOK Open Graph === -->
   <meta property="og:type" content="website" />
@@ -26,7 +26,7 @@
     <div class="lacirilalogo">
       <!-- Contenedor del video -->
       <div class="video-container">
-        <video id="video" src="./img/Juan Mejuto- egresados.mp4" controls autoplay="autoplay"></video>
+        <video id="video" src="./img/Juan Mejuto- egresados.mp4" controls></video>
       </div>
     </div>
   </header>
@@ -37,13 +37,18 @@
   </footer>
 
   <script>
-    // Esperar a que el video esté completamente cargado antes de reproducirlo
+    // Esperar a que todo el video esté completamente cargado antes de reproducirlo
     document.addEventListener('DOMContentLoaded', function () {
       const video = document.getElementById('video');
 
-      video.addEventListener('canplaythrough', function () {
-        video.play();
+      video.addEventListener('loadeddata', function () {
+        if (video.readyState >= 3) { // readyState 3 indica que el video está lo suficientemente cargado para comenzar a reproducirse
+          video.play();
+        }
       });
+
+      // Forzar la precarga del video completo
+      video.preload = 'auto';
     });
   </script>
 
