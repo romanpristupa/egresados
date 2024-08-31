@@ -1,12 +1,11 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
-    font-style:normal;
-
+    font-style: normal;
 }
 
 body {
@@ -17,27 +16,27 @@ body {
     width: 100vw;
     min-height: 100vh;
     text-align: center;
-    background-color: #fff; /* Color de fondo para las áreas fuera de la imagen */
-    overflow: hidden;
-    background-image: url('/img/bariloche.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 0;
+    background-color: #c9dcf2; /* Color de fondo para las áreas fuera de la imagen */
+    
 }
 
+header {
+    width: 100%;
+}
 
 header img {
     width: 100%;
     max-width: 450px;
     height: 250px;
+    margin-top: 0; /* Elimina cualquier espacio superior */
     padding: 0;
+    display: block;
 }
 
 .lacirilalogo h2,
 footer h2 {
     width: 100%;
     font-weight: bold;
+    font-size: 4rem;
+    padding-top: 50px;
 }
-
-
