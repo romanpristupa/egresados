@@ -1,8 +1,12 @@
-* {
+*{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 body {
@@ -10,130 +14,44 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 450px;
-    width: 100%;
-    min-height: 100vh;
-    background-image: url("/img/bariloche.jpeg");
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px; /* Agrega algo de padding para que no se pegue a los bordes en dispositivos pequeños */
-}
-
-header img,
-footer img {
     width: 100vw;
-    max-width: 450px;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #fff; /* Color de fondo para las áreas fuera de la imagen */
+    overflow: hidden;
 }
 
-section h2 {
-    width: 100%;
-    font-weight: bold;
-}
-
-.lacirilalogo {
-    padding-left: 0; /* Ajusta el padding para centrar el logo */
-}
-
-.lacirilalogo img {
-    width: 250px;
-    max-width: 250px;
-}
-
-.botonAgendame {
-    margin: 20px auto;
-    width: 300px;
-    height: 60px;
-    color: #407440;
-    padding: 5px 10px;
-    font-size: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 60px;
-    border: none;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
-    background: #FCF6DB;
-    z-index: 1;
-}
-
-.botonAgendame:hover:after {
-    width: 100%;
-    left: 0;
-}
-
-.botonAgendame:after {
-    border-radius: 5px;
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: -1;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
-    transition: all 0.3s ease;
-    background-color: #ffe566;
-    right: 0;
+    pointer-events: none;
 }
 
-.botonAgendame:active {
-    top: 2px;
+/* Añadimos un contenedor específico para la imagen de fondo */
+.background-image-container {
+    width: 450px;
+    height: 100%;
+    background-image: url("/img/bariloche.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
 }
 
-.contador {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-#resultado {
-    margin-top: 25px;
-    font-size: 1.5em;
-    color: #30B4B0;
-    font-weight: bold;
-}
-
-#minuto {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    color: #30B4B0;
-    font-weight: bold;
-}
-
-.mapa {
-    border: 1px solid #000; /* Borde negro fino */
-    border-radius: 5px;
-}
-
-.direccion {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    padding-bottom: 0px;
-    padding-top: 20px;
-    font-size: 1.1em;
-}
-
-.direccion h2 {
-    margin: 0;
-}
-
-.botonConfirmar {
-    font-size: 1.5rem;
-}
-
-.dinoRoar {
+/* Aseguramos que la imagen principal se adapte a 450px de ancho */
+header img {
     width: 100%;
     max-width: 450px;
-    margin: 0;
-    padding: 0;
 }
-.enSalon{
+
+.lacirilalogo h2,
+footer h2 {
+    width: 100%;
     font-weight: bold;
 }
+
 
